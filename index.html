@@ -263,20 +263,7 @@ header.nav.scrolled{box-shadow:0 10px 30px -18px rgba(36,27,18,.35)}
 /* ---------- owner ---------- */
 .owner{padding:clamp(64px,10vh,110px) 0;background:var(--night);color:var(--bone)}
 .owner .eyebrow{color:var(--accent)}
-.owner-grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:clamp(36px,6vw,84px);align-items:center}
-.monogram{
-  aspect-ratio:3/3.4;border:1px solid rgba(244,239,230,.25);border-radius:999px 999px 4px 4px;
-  display:grid;place-items:center;position:relative;overflow:hidden;
-  background:
-    radial-gradient(rgba(244,239,230,.06) 1px,transparent 1px),
-    var(--night-2);
-  background-size:16px 16px,auto;
-}
-.monogram .kl{font-family:var(--serif);font-size:clamp(4rem,7vw,6rem);color:var(--bone);line-height:1}
-.monogram .ph-label{
-  position:absolute;bottom:16px;left:0;right:0;text-align:center;
-  font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(244,239,230,.45);
-}
+.owner-grid{display:grid;grid-template-columns:1fr}
 .owner h2{font-size:clamp(2rem,3.6vw,3.1rem);margin:.4em 0 .5em;color:var(--bone)}
 .owner p{color:rgba(244,239,230,.75);max-width:58ch}
 .owner p+p{margin-top:1em}
@@ -377,7 +364,6 @@ footer a:hover{color:var(--bone)}
   .step:nth-child(even){border-right:none;padding-left:22px}
   .step:nth-child(n+3){border-bottom:none}
   .owner-grid,.contact-grid,.area-grid{grid-template-columns:1fr}
-  .monogram{max-width:340px}
   .wall{columns:2}
 }
 @media(max-width:700px){
@@ -612,10 +598,6 @@ footer a:hover{color:var(--bone)}
 <!-- ═══════════ OWNER ═══════════ -->
 <section class="owner" id="about">
   <div class="wrap owner-grid">
-    <div class="monogram rv" role="img" aria-label="Monogram of Klodjan Laho — portrait photo coming soon">
-      <div class="kl">KL</div>
-      <div class="ph-label">Portrait photo slot</div>
-    </div>
     <div>
       <p class="eyebrow rv">The Hands Behind the Wall</p>
       <h2 class="rv d1">Klodjan Laho</h2>
