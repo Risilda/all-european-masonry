@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All European Masonry — Brick, Stone &amp; Hardscape in Connecticut</title>
+<meta name="description" content="All European Masonry — Klodjan Laho. Patios, retaining walls, facades, fireplaces & custom stonework built the old way across Connecticut. Free estimates: (203) 510-1525.">
+<meta property="og:title" content="All European Masonry">
+<meta property="og:description" content="Old-world masonry, built new. Patios, walls, facades & fireplaces across Connecticut. Call Klodjan: (203) 510-1525">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/photo-6.jpg">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="8" fill="%23241B12"/><path d="M32 10 L52 30 L32 54 L12 30 Z" fill="none" stroke="%23A64B2A" stroke-width="4"/><path d="M32 22 L40 30 L32 42 L24 30 Z" fill="%23F4EFE6"/></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   ALL EUROPEAN MASONRY — "built like a wall" design system
+   surface: decide/learn · one hero · mortar-joint hairlines
+   ============================================================ */
+:root{
+  --paper:#F4EFE6;
+  --paper-2:#EBE3D3;
+  --paper-3:#E2D8C4;
+  --ink:#241B12;
+  --ink-soft:#5C5044;
+  --ink-faint:#8A7D6D;
+  --line:rgba(36,27,18,.16);
+  --accent:#A64B2A;
+  --accent-deep:#7E371C;
+  --night:#1B130C;
+  --night-2:#261B11;
+  --bone:#F4EFE6;
+  --serif:'Marcellus', 'Times New Roman', serif;
+  --sans:'Jost', 'Helvetica Neue', sans-serif;
+  --joint:1px solid var(--line);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+body{
+  font-family:var(--sans);
+  font-weight:300;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+  font-size:17px;
+  overflow-x:hidden;
+}
+::selection{background:var(--accent);color:var(--bone)}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* ---------- type ---------- */
+h1,h2,h3,.wordmark{font-family:var(--serif);font-weight:400;line-height:1.08;letter-spacing:.01em;text-wrap:balance}
+.eyebrow{
+  font-family:var(--sans);font-size:.72rem;font-weight:600;
+  letter-spacing:.34em;text-transform:uppercase;color:var(--accent);
+  display:flex;align-items:center;gap:.9em;
+}
+.eyebrow::before{content:"";width:2.4em;height:1px;background:var(--accent)}
+.lead{color:var(--ink-soft);max-width:56ch}
+
+/* ---------- layout ---------- */
+.wrap{max-width:1200px;margin:0 auto;padding:0 clamp(20px,4vw,48px)}
+section{border-top:var(--joint);position:relative}
+
+/* faint blueprint coursing in hero */
+.hero{
+  border-top:none;
+  padding:clamp(56px,9vh,110px) 0 clamp(60px,9vh,100px);
+  background:
+    linear-gradient(rgba(36,27,18,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(36,27,18,.035) 1px,transparent 1px),
+    var(--paper);
+  background-size:88px 88px,88px 88px,auto;
+}
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:clamp(32px,5vw,72px);align-items:center;
+}
+.hero h1{
+  font-size:clamp(2.9rem,6.4vw,5.4rem);
+  margin:.35em 0 .3em;
+}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lead{font-size:clamp(1rem,1.4vw,1.15rem)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:2.2em}
+.hero-meta{
+  margin-top:2.6em;display:flex;gap:2.4em;flex-wrap:wrap;
+  font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-faint);
+}
+.hero-meta b{display:block;font-family:var(--serif);font-size:1.05rem;letter-spacing:.02em;color:var(--ink);text-transform:none;font-weight:400}
+
+/* arched hero photo */
+.arch-frame{position:relative;justify-self:end;width:min(100%,460px)}
+.arch{
+  border-radius:999px 999px 6px 6px;
+  overflow:hidden;
+  box-shadow:0 30px 60px -30px rgba(36,27,18,.45);
+  border:1px solid var(--line);
+}
+.arch img{aspect-ratio:3/4;object-fit:cover;width:100%}
+.keystone-badge{
+  position:absolute;left:-34px;bottom:38px;width:104px;height:104px;
+  background:var(--night);color:var(--bone);border-radius:50%;
+  display:grid;place-items:center;text-align:center;
+  font-family:var(--serif);font-size:.62rem;letter-spacing:.22em;line-height:1.5;
+  box-shadow:0 18px 34px -14px rgba(27,19,12,.55);
+  transform:rotate(-8deg);
+}
+.keystone-badge span{color:var(--accent);font-size:1.15rem;letter-spacing:.1em;display:block}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:.6em;
+  font-family:var(--sans);font-weight:500;font-size:.86rem;
+  letter-spacing:.14em;text-transform:uppercase;text-decoration:none;
+  padding:1.05em 1.9em;border-radius:2px;border:1px solid transparent;
+  cursor:pointer;transition:transform .18s ease,background .18s ease,color .18s ease,border-color .18s ease;
+}
+.btn:active{transform:translateY(1px)}
+.btn-solid{background:var(--accent);color:#FFF8EE}
+.btn-solid:hover{background:var(--accent-deep)}
+.btn-ghost{border-color:var(--ink);color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--paper)}
+.btn-light{border-color:rgba(244,239,230,.5);color:var(--bone)}
+.btn-light:hover{background:var(--bone);color:var(--night)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---------- topbar + nav ---------- */
+.topbar{
+  background:var(--night);color:rgba(244,239,230,.85);
+  font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;min-height:38px;gap:16px}
+.topbar a{text-decoration:none}
+.topbar a:hover{color:var(--bone)}
+.topbar .tb-right{display:flex;gap:1.8em}
+.tb-note{color:var(--accent);font-weight:500}
+header.nav{
+  position:sticky;top:0;z-index:60;background:rgba(244,239,230,.92);
+  backdrop-filter:blur(10px);border-bottom:var(--joint);
+  transition:box-shadow .25s ease;
+}
+header.nav.scrolled{box-shadow:0 10px 30px -18px rgba(36,27,18,.35)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;min-height:76px;gap:24px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand svg{width:40px;height:40px;flex-shrink:0}
+.wordmark{font-size:1.02rem;line-height:1.15;letter-spacing:.06em}
+.wordmark small{display:block;font-family:var(--sans);font-size:.6rem;font-weight:600;letter-spacing:.42em;color:var(--accent);margin-top:2px}
+.nav-links{display:flex;gap:clamp(16px,2.4vw,34px);list-style:none;align-items:center}
+.nav-links a{
+  text-decoration:none;font-size:.78rem;font-weight:500;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
+  padding:.4em 0;border-bottom:2px solid transparent;transition:color .15s,border-color .15s;
+}
+.nav-links a:hover{color:var(--ink);border-bottom-color:var(--accent)}
+.nav-cta{padding:.7em 1.4em;font-size:.72rem}
+.burger{display:none;background:none;border:1px solid var(--line);border-radius:2px;width:46px;height:46px;cursor:pointer;position:relative}
+.burger span,.burger span::before,.burger span::after{
+  content:"";position:absolute;left:12px;right:12px;height:2px;background:var(--ink);transition:transform .2s ease,top .2s ease,opacity .2s ease;
+}
+.burger span{top:22px}
+.burger span::before{top:-7px;left:0;right:0}
+.burger span::after{top:7px;left:0;right:0}
+.burger.open span{background:transparent}
+.burger.open span::before{top:0;transform:rotate(45deg)}
+.burger.open span::after{top:0;transform:rotate(-45deg)}
+
+/* ---------- ticker ---------- */
+.ticker{overflow:hidden;background:var(--night);color:var(--bone);padding:14px 0;border-top:none}
+.ticker-track{display:flex;width:max-content;animation:slide 36s linear infinite}
+.ticker:hover .ticker-track{animation-play-state:paused}
+.ticker span{
+  font-family:var(--serif);font-size:.95rem;letter-spacing:.3em;text-transform:uppercase;
+  white-space:nowrap;padding-right:2.4em;
+}
+.ticker i{color:var(--accent);font-style:normal;padding-right:2.4em}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* ---------- section heads ---------- */
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:clamp(40px,6vh,64px)}
+.sec-head h2{font-size:clamp(2rem,4vw,3.3rem);margin-top:.4em}
+.sec-head .kicker-num{
+  font-family:var(--serif);font-size:clamp(2.6rem,5vw,4.2rem);
+  color:transparent;-webkit-text-stroke:1px var(--line);line-height:1;flex-shrink:0;
+}
+
+/* ---------- craft rows ---------- */
+.craft{padding:clamp(64px,10vh,110px) 0}
+.craft-row{
+  display:grid;grid-template-columns:90px 1fr 1.1fr auto;gap:clamp(16px,3vw,44px);
+  align-items:baseline;padding:26px 8px;border-top:var(--joint);
+  transition:background .2s ease,padding-left .2s ease;
+}
+.craft-row:last-child{border-bottom:var(--joint)}
+.craft-row:hover{background:var(--paper-2);padding-left:22px}
+.craft-row .num{font-family:var(--serif);color:var(--accent);font-size:1.05rem;letter-spacing:.08em}
+.craft-row h3{font-size:clamp(1.25rem,2vw,1.6rem)}
+.craft-row p{color:var(--ink-soft);font-size:.95rem}
+.craft-row .tag{
+  font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-faint);
+  white-space:nowrap;align-self:center;
+}
+
+/* ---------- the wall (masonry) ---------- */
+.wall-sec{padding:clamp(64px,10vh,110px) 0;background:var(--paper-2)}
+.wall{columns:3;column-gap:22px}
+.wall-item{break-inside:avoid;margin-bottom:22px;position:relative}
+.wall-item.photo{
+  border-radius:3px;overflow:hidden;border:1px solid var(--line);cursor:zoom-in;
+  background:var(--paper);
+  box-shadow:0 14px 30px -20px rgba(36,27,18,.4);
+  transition:transform .25s ease,box-shadow .25s ease;
+}
+.wall-item.photo:hover{transform:translateY(-4px);box-shadow:0 26px 44px -22px rgba(36,27,18,.5)}
+.wall-item.photo img{width:100%;height:auto;transition:transform .5s ease}
+.wall-item.photo:hover img{transform:scale(1.03)}
+.wall-cap{
+  position:absolute;left:0;right:0;bottom:0;padding:36px 16px 12px;
+  background:linear-gradient(transparent,rgba(27,19,12,.82));
+  color:var(--bone);font-size:.72rem;letter-spacing:.26em;text-transform:uppercase;
+  opacity:0;transition:opacity .25s ease;
+}
+.wall-item.photo:hover .wall-cap{opacity:1}
+/* typographic stone tiles woven between photos */
+.stone-tile{
+  border:1px solid var(--line);border-radius:3px;background:var(--paper);
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:.5em;
+  text-align:center;padding:34px 18px;
+  background-image:radial-gradient(rgba(36,27,18,.05) 1px,transparent 1px);
+  background-size:14px 14px;
+}
+.stone-tile b{
+  font-family:var(--serif);font-weight:400;letter-spacing:.3em;font-size:1.05rem;
+  color:var(--ink);text-transform:uppercase;
+}
+.stone-tile i{font-style:normal;font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--accent)}
+.stone-tile.dark{background-color:var(--night);border-color:var(--night)}
+.stone-tile.dark b{color:var(--bone)}
+.stone-tile.accent{background-color:var(--accent);border-color:var(--accent)}
+.stone-tile.accent b{color:#FFF3E6}
+.wall-foot{margin-top:34px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.wall-foot p{color:var(--ink-soft);font-size:.95rem;max-width:52ch}
+
+/* ---------- process ---------- */
+.process{padding:clamp(64px,10vh,110px) 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:var(--joint)}
+.step{padding:34px 26px 40px 0;border-right:var(--joint);position:relative}
+.step:last-child{border-right:none}
+.step::before{
+  content:"";position:absolute;top:-5px;left:0;width:9px;height:9px;background:var(--accent);
+  transform:rotate(45deg);
+}
+.step .s-num{font-family:var(--serif);font-size:.95rem;color:var(--accent);letter-spacing:.14em}
+.step h3{font-size:1.28rem;margin:.55em 0 .4em}
+.step p{color:var(--ink-soft);font-size:.93rem}
+
+/* ---------- owner ---------- */
+.owner{padding:clamp(64px,10vh,110px) 0;background:var(--night);color:var(--bone)}
+.owner .eyebrow{color:var(--accent)}
+.owner-grid{display:grid;grid-template-columns:.9fr 1.4fr;gap:clamp(36px,6vw,84px);align-items:center}
+.monogram{
+  aspect-ratio:3/3.4;border:1px solid rgba(244,239,230,.25);border-radius:999px 999px 4px 4px;
+  display:grid;place-items:center;position:relative;overflow:hidden;
+  background:
+    radial-gradient(rgba(244,239,230,.06) 1px,transparent 1px),
+    var(--night-2);
+  background-size:16px 16px,auto;
+}
+.monogram .kl{font-family:var(--serif);font-size:clamp(4rem,7vw,6rem);color:var(--bone);line-height:1}
+.monogram .ph-label{
+  position:absolute;bottom:16px;left:0;right:0;text-align:center;
+  font-size:.62rem;letter-spacing:.3em;text-transform:uppercase;color:rgba(244,239,230,.45);
+}
+.owner h2{font-size:clamp(2rem,3.6vw,3.1rem);margin:.4em 0 .5em;color:var(--bone)}
+.owner p{color:rgba(244,239,230,.75);max-width:58ch}
+.owner p+p{margin-top:1em}
+.owner .sig{
+  margin-top:2em;font-family:var(--serif);font-size:1.5rem;color:var(--accent);
+}
+.owner .sig small{
+  display:block;font-family:var(--sans);font-size:.7rem;letter-spacing:.3em;
+  text-transform:uppercase;color:rgba(244,239,230,.55);margin-top:.5em;
+}
+.owner-facts{display:flex;gap:2.6em;flex-wrap:wrap;margin-top:2.4em}
+.owner-facts div{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(244,239,230,.5)}
+.owner-facts b{display:block;font-family:var(--serif);font-weight:400;font-size:1.02rem;letter-spacing:.02em;color:var(--bone);text-transform:none;margin-top:4px}
+
+/* ---------- service area ---------- */
+.area{padding:clamp(64px,10vh,110px) 0}
+.area-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,80px);align-items:start}
+.plaques{display:flex;flex-wrap:wrap;gap:10px}
+.plaque{
+  border:1px solid var(--line);border-radius:2px;padding:.7em 1.3em;
+  font-family:var(--serif);letter-spacing:.14em;font-size:.92rem;
+  background:var(--paper);box-shadow:inset 0 -2px 0 rgba(36,27,18,.07);
+  transition:background .2s,color .2s,border-color .2s;cursor:default;
+}
+.plaque:hover{background:var(--night);color:var(--bone);border-color:var(--night)}
+
+/* ---------- contact ---------- */
+.contact{background:linear-gradient(var(--night-2),var(--night));color:var(--bone);border-top:none;padding:clamp(70px,11vh,120px) 0}
+.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,6vw,90px)}
+.contact .eyebrow{color:var(--accent)}
+.contact h2{font-size:clamp(2.2rem,4.4vw,3.6rem);margin:.4em 0 .4em;color:var(--bone)}
+.contact .lead{color:rgba(244,239,230,.72)}
+.big-phone{
+  display:inline-block;margin-top:1.6em;text-decoration:none;
+  font-family:var(--serif);font-size:clamp(1.7rem,3.4vw,2.7rem);color:var(--bone);
+  border-bottom:2px solid var(--accent);padding-bottom:.12em;transition:color .2s;
+}
+.big-phone:hover{color:var(--accent)}
+.big-mail{display:block;margin-top:1em;color:rgba(244,239,230,.7);text-decoration:none;font-size:1.05rem}
+.big-mail:hover{color:var(--bone)}
+form.est{display:flex;flex-direction:column;gap:18px}
+.field label{
+  display:block;font-size:.68rem;font-weight:600;letter-spacing:.28em;
+  text-transform:uppercase;color:rgba(244,239,230,.55);margin-bottom:.6em;
+}
+.field input,.field textarea{
+  width:100%;background:rgba(244,239,230,.06);border:1px solid rgba(244,239,230,.22);
+  border-radius:2px;color:var(--bone);font-family:var(--sans);font-size:1rem;
+  padding:.9em 1em;transition:border-color .2s,background .2s;
+}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--accent);background:rgba(244,239,230,.09)}
+.field textarea{min-height:110px;resize:vertical}
+.form-note{font-size:.78rem;color:rgba(244,239,230,.45)}
+.form-note a{color:rgba(244,239,230,.7)}
+
+/* ---------- footer ---------- */
+footer{background:var(--night);color:rgba(244,239,230,.55);border-top:1px solid rgba(244,239,230,.12);padding:34px 0}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;font-size:.78rem;letter-spacing:.12em}
+footer .f-brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);color:var(--bone);letter-spacing:.1em}
+footer svg{width:26px;height:26px}
+footer a{color:rgba(244,239,230,.75);text-decoration:none}
+footer a:hover{color:var(--bone)}
+
+/* ---------- lightbox ---------- */
+.lb{
+  position:fixed;inset:0;z-index:200;background:rgba(20,13,7,.94);
+  display:none;align-items:center;justify-content:center;flex-direction:column;
+  padding:5vh 4vw;backdrop-filter:blur(4px);
+}
+.lb.open{display:flex}
+.lb img{max-width:min(92vw,1080px);max-height:76vh;border-radius:3px;box-shadow:0 40px 90px -30px rgba(0,0,0,.8);object-fit:contain}
+.lb-cap{margin-top:18px;color:var(--bone);font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;text-align:center}
+.lb-count{margin-top:6px;color:rgba(244,239,230,.45);font-size:.72rem;letter-spacing:.2em}
+.lb button{
+  position:absolute;background:none;border:1px solid rgba(244,239,230,.3);border-radius:50%;
+  width:52px;height:52px;color:var(--bone);cursor:pointer;display:grid;place-items:center;
+  transition:background .2s,border-color .2s;font-size:1.1rem;
+}
+.lb button:hover{background:rgba(244,239,230,.12);border-color:var(--bone)}
+.lb-close{top:26px;right:26px}
+.lb-prev{left:22px;top:50%;transform:translateY(-50%)}
+.lb-next{right:22px;top:50%;transform:translateY(-50%)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(26px)}
+.rv.on{opacity:1;transform:none;transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.d1.on{transition-delay:.08s}.d2.on{transition-delay:.16s}.d3.on{transition-delay:.24s}.d4.on{transition-delay:.32s}
+
+/* ---------- responsive ---------- */
+@media(max-width:1020px){
+  .hero-grid{grid-template-columns:1fr;}
+  .arch-frame{justify-self:start;margin-top:10px}
+  .craft-row{grid-template-columns:56px 1fr;grid-template-rows:auto auto}
+  .craft-row p{grid-column:2}
+  .craft-row .tag{display:none}
+  .steps{grid-template-columns:1fr 1fr}
+  .step{border-bottom:var(--joint);padding-right:12px}
+  .step:nth-child(even){border-right:none;padding-left:22px}
+  .step:nth-child(n+3){border-bottom:none}
+  .owner-grid,.contact-grid,.area-grid{grid-template-columns:1fr}
+  .monogram{max-width:340px}
+  .wall{columns:2}
+}
+@media(max-width:700px){
+  .nav-links{
+    display:none;position:absolute;top:100%;left:0;right:0;
+    background:var(--paper);flex-direction:column;align-items:stretch;
+    padding:18px clamp(20px,4vw,48px) 26px;gap:4px;border-bottom:var(--joint);
+    box-shadow:0 30px 40px -24px rgba(36,27,18,.4);
+  }
+  .nav-links.open{display:flex}
+  .nav-links a{display:block;padding:.85em 0;border-bottom:1px solid var(--line);font-size:.85rem}
+  .nav-links .nav-cta-li{margin-top:12px}
+  .burger{display:block}
+  .tb-note{display:none}
+  .wall{columns:1}
+  .steps{grid-template-columns:1fr}
+  .step{border-right:none;padding-left:0;border-bottom:var(--joint)}
+  .step:last-child{border-bottom:none}
+  .sec-head{flex-direction:column;align-items:flex-start;gap:8px}
+  .lb-prev,.lb-next{width:44px;height:44px;top:auto;bottom:18px;transform:none}
+  .lb-prev{left:calc(50% - 60px)}
+  .lb-next{right:calc(50% - 60px)}
+  .keystone-badge{width:84px;height:84px;left:-14px;font-size:.55rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ TOPBAR ═══════════ -->
+<div class="topbar">
+  <div class="wrap">
+    <span class="tb-note">Free estimates · One crew, start to finish</span>
+    <div class="tb-right">
+      <a href="tel:+12035101525">(203) 510-1525</a>
+      <a href="mailto:klodilaho77@gmail.com">klodilaho77@gmail.com</a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ NAV ═══════════ -->
+<header class="nav" id="top">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="All European Masonry — home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="8" fill="#241B12"/><path d="M32 10 L52 30 L32 54 L12 30 Z" fill="none" stroke="#A64B2A" stroke-width="4"/><path d="M32 22 L40 30 L32 42 L24 30 Z" fill="#F4EFE6"/></svg>
+      <span class="wordmark">ALL EUROPEAN MASONRY<small>Klodjan Laho · Connecticut</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#craft">The Craft</a></li>
+        <li><a href="#wall">The Wall</a></li>
+        <li><a href="#process">How We Build</a></li>
+        <li><a href="#area">Service Area</a></li>
+        <li class="nav-cta-li"><a class="btn btn-solid nav-cta" href="#contact">Get an Estimate</a></li>
+      </ul>
+    </nav>
+    <button class="burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+  </div>
+</header>
+
+<!-- ═══════════ HERO ═══════════ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow rv">Masonry · Hardscape · Connecticut</p>
+      <h1 class="rv d1">Built the old way.<br>Built to <em>outlast us&nbsp;all.</em></h1>
+      <p class="lead rv d2">All European Masonry designs and builds patios, retaining walls, facades,
+      and fireplaces the way they were built for centuries in Europe — proper foundations,
+      tight courses, honest stone. No shortcuts survive a Connecticut winter. Neither do we cut any.</p>
+      <div class="hero-ctas rv d3">
+        <a class="btn btn-solid" href="#contact">Get a Free Estimate</a>
+        <a class="btn btn-ghost" href="#wall">See the Wall ↓</a>
+      </div>
+      <div class="hero-meta rv d4">
+        <div>Speak with<b>Klodjan Laho, Owner</b></div>
+        <div>Call or text<b>(203) 510-1525</b></div>
+        <div>Every job<b>Built by one crew</b></div>
+      </div>
+    </div>
+    <div class="arch-frame rv d2">
+      <figure class="arch">
+        <img src="assets/photo-6.jpg" alt="Brick pillar fence and gated entryway built by All European Masonry" fetchpriority="high">
+      </figure>
+      <div class="keystone-badge" aria-hidden="true"><span>AEM</span>BRICK · STONE<br>BLOCK · PAVERS</div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ TICKER ═══════════ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>Brick<i>◆</i>Stone<i>◆</i>Block<i>◆</i>Pavers<i>◆</i>Retaining Walls<i>◆</i>Patios<i>◆</i>Facades<i>◆</i>Fireplaces<i>◆</i>Steps<i>◆</i>Stucco<i>◆</i></span>
+    <span>Brick<i>◆</i>Stone<i>◆</i>Block<i>◆</i>Pavers<i>◆</i>Retaining Walls<i>◆</i>Patios<i>◆</i>Facades<i>◆</i>Fireplaces<i>◆</i>Steps<i>◆</i>Stucco<i>◆</i></span>
+  </div>
+</div>
+
+<!-- ═══════════ THE CRAFT ═══════════ -->
+<section class="craft" id="craft">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow">What We Build</p>
+        <h2>The Craft</h2>
+      </div>
+      <div class="kicker-num" aria-hidden="true">I</div>
+    </div>
+    <div class="rv d1">
+      <div class="craft-row">
+        <div class="num">01</div>
+        <h3>Patios &amp; Outdoor Living</h3>
+        <p>Bluestone, pavers, and natural stone — graded right, set tight, and drained properly so nothing heaves or puddles come spring.</p>
+        <div class="tag">Bluestone · Pavers</div>
+      </div>
+      <div class="craft-row">
+        <div class="num">02</div>
+        <h3>Retaining Walls &amp; Steps</h3>
+        <p>Walls built to hold back the hill a century from now: compacted base, correct batter, and drainage behind every single course.</p>
+        <div class="tag">Belgian Block · Fieldstone</div>
+      </div>
+      <div class="craft-row">
+        <div class="num">03</div>
+        <h3>Facades &amp; Stone Veneer</h3>
+        <p>Real stone and thin veneer that turn a plain front wall into the best-looking house on the street — inside and out.</p>
+        <div class="tag">Limestone · Ledger Stone</div>
+      </div>
+      <div class="craft-row">
+        <div class="num">04</div>
+        <h3>Fireplaces &amp; Fire Pits</h3>
+        <p>Wood-fired or gas, freestanding or built-in — the gathering spot your yard has been missing, engineered to draw smoke away, not into it.</p>
+        <div class="tag">Wood · Gas</div>
+      </div>
+      <div class="craft-row">
+        <div class="num">05</div>
+        <h3>Brickwork &amp; Repointing</h3>
+        <p>Chimneys, walkways, and restoration work — mortar color-matched and joints cut by hand so repairs disappear into the original wall.</p>
+        <div class="tag">Restoration · Chimneys</div>
+      </div>
+      <div class="craft-row">
+        <div class="num">06</div>
+        <h3>Custom Stonework</h3>
+        <p>Arches, gate pillars, benches, address stones, garden walls — if it can be drawn in stone, we can lay it up.</p>
+        <div class="tag">One-of-a-kind</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ THE WALL ═══════════ -->
+<section class="wall-sec" id="wall">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow">Recent Work</p>
+        <h2>The Wall</h2>
+      </div>
+      <div class="kicker-num" aria-hidden="true">II</div>
+    </div>
+
+    <!-- NOTE: captions describe real attached photos; replace/add as new jobs are shot -->
+    <div class="wall rv d1" id="wallGrid">
+      <figure class="wall-item photo" data-lb="Poolside stone deck &amp; custom fencing" >
+        <img src="assets/photo-1.jpg" alt="Stone pool deck and patio hardscape with custom fence" loading="lazy" width="1600" height="1181">
+        <figcaption class="wall-cap">Poolside Hardscape</figcaption>
+      </figure>
+      <div class="stone-tile" style="--tile-aspect:1" aria-hidden="true"><i>All European</i><b>Mortar &amp; Pride</b></div>
+      <figure class="wall-item photo" data-lb="Setting courses on a garden wall">
+        <img src="assets/photo-3.jpg" alt="Mason setting stonework on an outdoor garden project" loading="lazy" width="1600" height="1186">
+        <figcaption class="wall-cap">On Site · Setting Courses</figcaption>
+      </figure>
+      <div class="stone-tile dark" aria-hidden="true"><i>Since the old country</i><b>Brick ◆ Stone ◆ Block</b></div>
+      <figure class="wall-item photo" data-lb="Entry gate &amp; brick pillars">
+        <img src="assets/photo-6.jpg" alt="Brick pillar fence and gated entryway" loading="lazy" width="1600" height="1233">
+        <figcaption class="wall-cap">Entry Gate &amp; Pillars</figcaption>
+      </figure>
+      <figure class="wall-item photo" data-lb="Garden archway &amp; stone walls">
+        <img src="assets/photo-4.jpg" alt="Stone garden wall and arch beside fresh landscaping" loading="lazy" width="1600" height="1175">
+        <figcaption class="wall-cap">Garden Archway</figcaption>
+      </figure>
+      <div class="stone-tile accent" aria-hidden="true"><i>Level · Plumb · True</i><b>Every Course</b></div>
+      <figure class="wall-item photo" data-lb="Fieldstone steps through planted beds">
+        <img src="assets/photo-5.jpg" alt="Fieldstone wall and steps through planted garden beds" loading="lazy" width="1600" height="1242">
+        <figcaption class="wall-cap">Fieldstone &amp; Plantings</figcaption>
+      </figure>
+      <figure class="wall-item photo" data-lb="Our crew on the job">
+        <img src="assets/photo-2.jpg" alt="Crew member in safety vest working on a masonry job site" loading="lazy" width="1378" height="1600">
+        <figcaption class="wall-cap">The Crew</figcaption>
+      </figure>
+    </div>
+
+    <div class="wall-foot rv">
+      <p>Every project above was laid by our own hands. Tap any photo to look closer — then imagine yours here.</p>
+      <a class="btn btn-ghost" href="#contact">Add Your Project →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ PROCESS ═══════════ -->
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <div>
+        <p class="eyebrow">From First Call to Final Stone</p>
+        <h2>How We Build</h2>
+      </div>
+      <div class="kicker-num" aria-hidden="true">III</div>
+    </div>
+    <div class="steps rv d1">
+      <div class="step">
+        <div class="s-num">Step 01</div>
+        <h3>Walk the Site</h3>
+        <p>We come out free of charge, measure, check grade and drainage, and listen to what you actually want.</p>
+      </div>
+      <div class="step">
+        <div class="s-num">Step 02</div>
+        <h3>Straight Estimate</h3>
+        <p>A written, itemized price before a single stone moves. What it says is what you pay.</p>
+      </div>
+      <div class="step">
+        <div class="s-num">Step 03</div>
+        <h3>The Build</h3>
+        <p>One crew, start to finish — same hands every day. Site kept clean, every course checked level.</p>
+      </div>
+      <div class="step">
+        <div class="s-num">Step 04</div>
+        <h3>The Walkthrough</h3>
+        <p>We walk the finished work together. Done doesn't mean done — done means you're proud of it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ OWNER ═══════════ -->
+<section class="owner" id="about">
+  <div class="wrap owner-grid">
+    <div class="monogram rv" role="img" aria-label="Monogram of Klodjan Laho — portrait photo coming soon">
+      <div class="kl">KL</div>
+      <div class="ph-label">Portrait photo slot</div>
+    </div>
+    <div>
+      <p class="eyebrow rv">The Hands Behind the Wall</p>
+      <h2 class="rv d1">Klodjan Laho</h2>
+      <p class="rv d2">For Klodjan, masonry isn't a service — it's the family trade. The European way of
+      building is simple: do the foundation nobody sees perfectly, because the wall everybody sees
+      depends on it.</p>
+      <p class="rv d3">He answers his own phone, walks every job himself, and puts his name on
+      every wall. That's the whole business model.</p>
+      <p class="sig rv d3">Klodjan Laho<small>Owner · All European Masonry</small></p>
+      <div class="owner-facts rv d4">
+        <div>Direct line<b><a href="tel:+12035101525" style="text-decoration:none;color:inherit">(203) 510-1525</a></b></div>
+        <div>Email<b><a href="mailto:klodilaho77@gmail.com" style="text-decoration:none;color:inherit">klodilaho77@gmail.com</a></b></div>
+        <div>Estimates<b>Always free</b></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ SERVICE AREA ═══════════ -->
+<section class="area" id="area">
+  <div class="wrap area-grid">
+    <div>
+      <div class="sec-head rv" style="margin-bottom:24px">
+        <div>
+          <p class="eyebrow">Where We Build</p>
+          <h2>Service Area</h2>
+        </div>
+        <div class="kicker-num" aria-hidden="true">IV</div>
+      </div>
+      <p class="lead rv d1">Based in Connecticut and building within roughly an hour of you —
+      patios in the suburbs, sea walls near the shore, fieldstone up in the hills. If you're unsure,
+      just ask: <a href="tel:+12035101525" style="color:var(--accent)">(203) 510-1525</a>.</p>
+    </div>
+    <!-- TODO(confirm with owner): exact town list -->
+    <div class="plaques rv d2" aria-label="Towns served">
+      <span class="plaque">Fairfield County</span>
+      <span class="plaque">New Haven County</span>
+      <span class="plaque">Litchfield County</span>
+      <span class="plaque">Hartford County</span>
+      <span class="plaque">Shoreline Towns</span>
+      <span class="plaque">&amp; Your Town — Ask Us</span>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ CONTACT ═══════════ -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="eyebrow rv">Free Estimate</p>
+      <h2 class="rv d1">Let's build something<br>that outlasts us all.</h2>
+      <p class="lead rv d2">Tell us what you're dreaming up — a patio, a wall, a fireplace, the whole yard.
+      Klodjan will call you back, walk the property, and give you a straight number.</p>
+      <a class="big-phone rv d2" href="tel:+12035101525">(203) 510-1525</a>
+      <a class="big-mail rv d3" href="mailto:klodilaho77@gmail.com">klodilaho77@gmail.com</a>
+    </div>
+    <div class="rv d2">
+      <!-- Form composes an email via mailto: — swap for Formspree/CRM endpoint later -->
+      <form class="est" id="estForm">
+        <div class="field">
+          <label for="fName">Your Name</label>
+          <input id="fName" name="name" type="text" autocomplete="name" required placeholder="Jane Smith">
+        </div>
+        <div class="field">
+          <label for="fPhone">Phone</label>
+          <input id="fPhone" name="phone" type="tel" autocomplete="tel" required placeholder="(203) 555-0100">
+        </div>
+        <div class="field">
+          <label for="fProj">What are we building?</label>
+          <textarea id="fProj" name="project" required placeholder="A bluestone patio about 400 sq ft, plus steps down to the backyard…"></textarea>
+        </div>
+        <button class="btn btn-solid" type="submit">Request My Free Estimate</button>
+        <p class="form-note">This opens your email app with everything filled in — nothing is stored on this site.
+        Prefer to talk? <a href="tel:+12035101525">Call Klodjan directly.</a></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ FOOTER ═══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="f-brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="8" fill="#F4EFE6"/><path d="M32 10 L52 30 L32 54 L12 30 Z" fill="none" stroke="#A64B2A" stroke-width="4"/><path d="M32 22 L40 30 L32 42 L24 30 Z" fill="#1B130C"/></svg>
+      ALL EUROPEAN MASONRY
+    </div>
+    <div>Klodjan Laho · <a href="tel:+12035101525">(203) 510-1525</a> · <a href="mailto:klodilaho77@gmail.com">klodilaho77@gmail.com</a></div>
+    <div>© <span id="year">2026</span> — Built by hand, like everything else we do.</div>
+  </div>
+</footer>
+
+<!-- ═══════════ LIGHTBOX ═══════════ -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Project photo viewer">
+  <button class="lb-close" id="lbClose" aria-label="Close viewer">✕</button>
+  <button class="lb-prev" id="lbPrev" aria-label="Previous photo">←</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-cap" id="lbCap"></div>
+  <div class="lb-count" id="lbCount"></div>
+  <button class="lb-next" id="lbNext" aria-label="Next photo">→</button>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* year */
+  document.getElementById("year").textContent = String(new Date().getFullYear());
+
+  /* sticky nav shadow */
+  var nav = document.querySelector("header.nav");
+  window.addEventListener("scroll", function(){
+    nav.classList.toggle("scrolled", window.scrollY > 8);
+  }, {passive:true});
+
+  /* mobile menu */
+  var burger = document.getElementById("burger");
+  var links = document.getElementById("navLinks");
+  burger.addEventListener("click", function(){
+    var open = links.classList.toggle("open");
+    burger.classList.toggle("open", open);
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  links.addEventListener("click", function(e){
+    if (e.target.tagName === "A") {
+      links.classList.remove("open");
+      burger.classList.remove("open");
+      burger.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* reveal on scroll */
+  var revealEls = document.querySelectorAll(".rv");
+  if ("IntersectionObserver" in window && !reduceMotion){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){ en.target.classList.add("on"); io.unobserve(en.target); }
+      });
+    }, {threshold:.12});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add("on"); });
+  }
+
+  /* ── lightbox ── */
+  var photos = Array.prototype.slice.call(document.querySelectorAll("#wallGrid .photo"));
+  var lb = document.getElementById("lb"),
+      lbImg = document.getElementById("lbImg"),
+      lbCap = document.getElementById("lbCap"),
+      lbCount = document.getElementById("lbCount"),
+      cur = 0;
+
+  function decode(s){ var t = document.createElement("textarea"); t.innerHTML = s; return t.value; }
+  function show(i){
+    cur = (i + photos.length) % photos.length;
+    var fig = photos[cur], img = fig.querySelector("img");
+    lbImg.src = img.src;
+    lbImg.alt = img.alt;
+    lbCap.textContent = decode(fig.getAttribute("data-lb") || "");
+    lbCount.textContent = (cur+1) + " / " + photos.length;
+  }
+  function openLb(i){ show(i); lb.classList.add("open"); document.body.style.overflow = "hidden"; document.getElementById("lbClose").focus(); }
+  function closeLb(){ lb.classList.remove("open"); document.body.style.overflow = ""; }
+
+  photos.forEach(function(fig, i){
+    fig.setAttribute("tabindex","0");
+    fig.setAttribute("role","button");
+    fig.setAttribute("aria-label","Open photo: " + (fig.getAttribute("data-lb")||""));
+    fig.addEventListener("click", function(){ openLb(i); });
+    fig.addEventListener("keydown", function(e){
+      if (e.key === "Enter" || e.key === " "){ e.preventDefault(); openLb(i); }
+    });
+  });
+  document.getElementById("lbClose").addEventListener("click", closeLb);
+  document.getElementById("lbPrev").addEventListener("click", function(){ show(cur-1); });
+  document.getElementById("lbNext").addEventListener("click", function(){ show(cur+1); });
+  lb.addEventListener("click", function(e){ if (e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function(e){
+    if (!lb.classList.contains("open")) return;
+    if (e.key === "Escape") closeLb();
+    else if (e.key === "ArrowLeft") show(cur-1);
+    else if (e.key === "ArrowRight") show(cur+1);
+  });
+  /* swipe */
+  var tx = null;
+  lb.addEventListener("touchstart", function(e){ tx = e.touches[0].clientX; }, {passive:true});
+  lb.addEventListener("touchend", function(e){
+    if (tx === null) return;
+    var dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 48) show(dx < 0 ? cur+1 : cur-1);
+    tx = null;
+  }, {passive:true});
+
+  /* ── estimate form → mailto compose ── */
+  document.getElementById("estForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    var n = document.getElementById("fName").value.trim(),
+        p = document.getElementById("fPhone").value.trim(),
+        j = document.getElementById("fProj").value.trim();
+    var subject = encodeURIComponent("Free estimate request — " + n);
+    var body = encodeURIComponent(
+      "Hi Klodjan,\n\nMy name is " + n + ". I'd like a free estimate.\n\n" +
+      "Phone: " + p + "\n\nProject:\n" + j + "\n\n— sent from alleuropeanmasonry.com"
+    );
+    window.location.href = "mailto:klodilaho77@gmail.com?subject=" + subject + "&body=" + body;
+  });
+})();
+</script>
+</body>
+</html>
